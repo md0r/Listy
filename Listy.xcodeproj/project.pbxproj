@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF12EBD929A7BC1A00D0A6BC /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF12EBD829A7BC1A00D0A6BC /* .swiftlint.yml */; };
+		AF446E0D29A760BC009D3180 /* MyListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446E0C29A760BC009D3180 /* MyListDetailView.swift */; };
+		AF446E0F29A76B14009D3180 /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446E0E29A76B14009D3180 /* ReminderListView.swift */; };
+		AF446E1129A76F9A009D3180 /* ReminderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446E1029A76F9A009D3180 /* ReminderCellView.swift */; };
+		AF446E1329A77353009D3180 /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446E1229A77353009D3180 /* Date + Extensions.swift */; };
+		AF446E1529A7788D009D3180 /* ReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446E1429A7788D009D3180 /* ReminderDetailView.swift */; };
+		AF446E1829A7798B009D3180 /* ReminderEditConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446E1729A7798B009D3180 /* ReminderEditConfig.swift */; };
+		AF446E1A29A77D70009D3180 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446E1929A77D70009D3180 /* CustomOperators.swift */; };
+		AF446E1C29A78160009D3180 /* SelectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF446E1B29A78160009D3180 /* SelectListView.swift */; };
+		AF7E3D2F29A673BE00B62301 /* RemindersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7E3D2E29A673BE00B62301 /* RemindersService.swift */; };
+		AF7E3D3229A674EC00B62301 /* UIColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7E3D3129A674EC00B62301 /* UIColorTransformer.swift */; };
+		AF7E3D3429A6798A00B62301 /* MyListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7E3D3329A6798A00B62301 /* MyListsView.swift */; };
+		AF7E3D3629A67CAA00B62301 /* MyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7E3D3529A67CAA00B62301 /* MyListCellView.swift */; };
+		AF7E3D3929A67ED000B62301 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7E3D3829A67ED000B62301 /* String + Extensions.swift */; };
 		AFC528B329A6561000803477 /* ListyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528B229A6561000803477 /* ListyApp.swift */; };
-		AFC528B529A6561000803477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528B429A6561000803477 /* ContentView.swift */; };
+		AFC528B529A6561000803477 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528B429A6561000803477 /* HomeView.swift */; };
 		AFC528B729A6561100803477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC528B629A6561100803477 /* Assets.xcassets */; };
 		AFC528BA29A6561100803477 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC528B929A6561100803477 /* Preview Assets.xcassets */; };
 		AFC528C429A6561100803477 /* ListyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528C329A6561100803477 /* ListyTests.swift */; };
 		AFC528CE29A6561100803477 /* ListyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528CD29A6561100803477 /* ListyUITests.swift */; };
 		AFC528D029A6561100803477 /* ListyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528CF29A6561100803477 /* ListyUITestsLaunchTests.swift */; };
+		AFC528DE29A6565200803477 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528DD29A6565200803477 /* CoreDataProvider.swift */; };
+		AFC528E129A65FB300803477 /* ListyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFC528DF29A65FB300803477 /* ListyModel.xcdatamodeld */; };
+		AFC528E429A661B000803477 /* MyList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528E329A661B000803477 /* MyList+CoreDataClass.swift */; };
+		AFC528E729A6646000803477 /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528E629A6646000803477 /* AddNewListView.swift */; };
+		AFC528E929A665AA00803477 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528E829A665AA00803477 /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +53,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF12EBD829A7BC1A00D0A6BC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		AF446E0C29A760BC009D3180 /* MyListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailView.swift; sourceTree = "<group>"; };
+		AF446E0E29A76B14009D3180 /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		AF446E1029A76F9A009D3180 /* ReminderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellView.swift; sourceTree = "<group>"; };
+		AF446E1229A77353009D3180 /* Date + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
+		AF446E1429A7788D009D3180 /* ReminderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailView.swift; sourceTree = "<group>"; };
+		AF446E1729A7798B009D3180 /* ReminderEditConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEditConfig.swift; sourceTree = "<group>"; };
+		AF446E1929A77D70009D3180 /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
+		AF446E1B29A78160009D3180 /* SelectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListView.swift; sourceTree = "<group>"; };
+		AF7E3D2E29A673BE00B62301 /* RemindersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersService.swift; sourceTree = "<group>"; };
+		AF7E3D3129A674EC00B62301 /* UIColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTransformer.swift; sourceTree = "<group>"; };
+		AF7E3D3329A6798A00B62301 /* MyListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsView.swift; sourceTree = "<group>"; };
+		AF7E3D3529A67CAA00B62301 /* MyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellView.swift; sourceTree = "<group>"; };
+		AF7E3D3829A67ED000B62301 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 		AFC528AF29A6561000803477 /* Listy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC528B229A6561000803477 /* ListyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListyApp.swift; sourceTree = "<group>"; };
-		AFC528B429A6561000803477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFC528B429A6561000803477 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AFC528B629A6561100803477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFC528B929A6561100803477 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFC528BF29A6561100803477 /* ListyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +77,11 @@
 		AFC528C929A6561100803477 /* ListyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC528CD29A6561100803477 /* ListyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListyUITests.swift; sourceTree = "<group>"; };
 		AFC528CF29A6561100803477 /* ListyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFC528DD29A6565200803477 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		AFC528E029A65FB300803477 /* Listy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Listy.xcdatamodel; sourceTree = "<group>"; };
+		AFC528E329A661B000803477 /* MyList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AFC528E629A6646000803477 /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
+		AFC528E829A665AA00803477 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +109,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF446E1629A77973009D3180 /* editConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				AF446E1729A7798B009D3180 /* ReminderEditConfig.swift */,
+			);
+			path = editConfigs;
+			sourceTree = "<group>";
+		};
+		AF7E3D2D29A6738F00B62301 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF7E3D2E29A673BE00B62301 /* RemindersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AF7E3D3029A674DC00B62301 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				AF7E3D3129A674EC00B62301 /* UIColorTransformer.swift */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
+		AF7E3D3729A67EBB00B62301 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF7E3D3829A67ED000B62301 /* String + Extensions.swift */,
+				AF446E1229A77353009D3180 /* Date + Extensions.swift */,
+				AF446E1929A77D70009D3180 /* CustomOperators.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AFC528A629A6561000803477 = {
 			isa = PBXGroup;
 			children = (
+				AF12EBD829A7BC1A00D0A6BC /* .swiftlint.yml */,
 				AFC528B129A6561000803477 /* Listy */,
 				AFC528C229A6561100803477 /* ListyTests */,
 				AFC528CC29A6561100803477 /* ListyUITests */,
@@ -94,8 +167,14 @@
 		AFC528B129A6561000803477 /* Listy */ = {
 			isa = PBXGroup;
 			children = (
+				AF7E3D3729A67EBB00B62301 /* Extensions */,
+				AFC528DC29A6563200803477 /* Providers */,
+				AFC528DF29A65FB300803477 /* ListyModel.xcdatamodeld */,
+				AFC528E229A6619B00803477 /* Models */,
+				AFC528E529A6644200803477 /* Views */,
+				AF7E3D2D29A6738F00B62301 /* Services */,
+				AF7E3D3029A674DC00B62301 /* Transformers */,
 				AFC528B229A6561000803477 /* ListyApp.swift */,
-				AFC528B429A6561000803477 /* ContentView.swift */,
 				AFC528B629A6561100803477 /* Assets.xcassets */,
 				AFC528B829A6561100803477 /* Preview Content */,
 			);
@@ -127,6 +206,40 @@
 			path = ListyUITests;
 			sourceTree = "<group>";
 		};
+		AFC528DC29A6563200803477 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				AFC528DD29A6565200803477 /* CoreDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		AFC528E229A6619B00803477 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF446E1629A77973009D3180 /* editConfigs */,
+				AFC528E329A661B000803477 /* MyList+CoreDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFC528E529A6644200803477 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFC528B429A6561000803477 /* HomeView.swift */,
+				AFC528E629A6646000803477 /* AddNewListView.swift */,
+				AFC528E829A665AA00803477 /* ColorPickerView.swift */,
+				AF7E3D3329A6798A00B62301 /* MyListsView.swift */,
+				AF7E3D3529A67CAA00B62301 /* MyListCellView.swift */,
+				AF446E0C29A760BC009D3180 /* MyListDetailView.swift */,
+				AF446E0E29A76B14009D3180 /* ReminderListView.swift */,
+				AF446E1029A76F9A009D3180 /* ReminderCellView.swift */,
+				AF446E1429A7788D009D3180 /* ReminderDetailView.swift */,
+				AF446E1B29A78160009D3180 /* SelectListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +250,7 @@
 				AFC528AB29A6561000803477 /* Sources */,
 				AFC528AC29A6561000803477 /* Frameworks */,
 				AFC528AD29A6561000803477 /* Resources */,
+				AF446E1D29A7B9C5009D3180 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -231,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF12EBD929A7BC1A00D0A6BC /* .swiftlint.yml in Resources */,
 				AFC528BA29A6561100803477 /* Preview Assets.xcassets in Resources */,
 				AFC528B729A6561100803477 /* Assets.xcassets in Resources */,
 			);
@@ -252,13 +367,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF446E1D29A7B9C5009D3180 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFC528AB29A6561000803477 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC528B529A6561000803477 /* ContentView.swift in Sources */,
+				AFC528B529A6561000803477 /* HomeView.swift in Sources */,
 				AFC528B329A6561000803477 /* ListyApp.swift in Sources */,
+				AF446E0F29A76B14009D3180 /* ReminderListView.swift in Sources */,
+				AF446E1829A7798B009D3180 /* ReminderEditConfig.swift in Sources */,
+				AF446E0D29A760BC009D3180 /* MyListDetailView.swift in Sources */,
+				AF446E1A29A77D70009D3180 /* CustomOperators.swift in Sources */,
+				AF446E1129A76F9A009D3180 /* ReminderCellView.swift in Sources */,
+				AFC528DE29A6565200803477 /* CoreDataProvider.swift in Sources */,
+				AF7E3D3229A674EC00B62301 /* UIColorTransformer.swift in Sources */,
+				AF7E3D3429A6798A00B62301 /* MyListsView.swift in Sources */,
+				AF7E3D2F29A673BE00B62301 /* RemindersService.swift in Sources */,
+				AFC528E929A665AA00803477 /* ColorPickerView.swift in Sources */,
+				AFC528E729A6646000803477 /* AddNewListView.swift in Sources */,
+				AF446E1329A77353009D3180 /* Date + Extensions.swift in Sources */,
+				AF7E3D3629A67CAA00B62301 /* MyListCellView.swift in Sources */,
+				AFC528E429A661B000803477 /* MyList+CoreDataClass.swift in Sources */,
+				AF7E3D3929A67ED000B62301 /* String + Extensions.swift in Sources */,
+				AF446E1529A7788D009D3180 /* ReminderDetailView.swift in Sources */,
+				AF446E1C29A78160009D3180 /* SelectListView.swift in Sources */,
+				AFC528E129A65FB300803477 /* ListyModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +736,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFC528DF29A65FB300803477 /* ListyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFC528E029A65FB300803477 /* Listy.xcdatamodel */,
+			);
+			currentVersion = AFC528E029A65FB300803477 /* Listy.xcdatamodel */;
+			path = ListyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AFC528A729A6561000803477 /* Project object */;
 }
