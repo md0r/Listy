@@ -19,6 +19,7 @@ struct ReminderCellView: View {
     
     let reminder: Reminder
     @State private var checked: Bool = false
+    let isSelected: Bool
     let delay = Delay()
     let onEvent: (ReminderCellEvents) -> Void
     
@@ -70,9 +71,11 @@ struct ReminderCellView: View {
             }
             
             Spacer()
-            Image(systemName: "info.circle.fill").onTapGesture {
-                onEvent(.onInfo)
-            }
+            Image(systemName: "info.circle.fill")
+                .onTapGesture {
+                    onEvent(.onInfo)
+                }
+                .opacity(isSelected ? 1.0 : 0.0)
             
         }.contentShape(Rectangle())
             .onTapGesture {
