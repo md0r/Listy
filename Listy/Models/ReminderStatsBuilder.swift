@@ -15,6 +15,13 @@ struct ReminderStatsValues {
     var completedCount: Int = 0
 }
 
+enum ReminderStatType {
+    case today
+    case all
+    case scheduled
+    case completed
+}
+
 struct ReminderStatsBuilder {
     
     func build(myListResults: FetchedResults<MyList>) -> ReminderStatsValues {
