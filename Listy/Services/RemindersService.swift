@@ -72,7 +72,7 @@ class RemindersService {
         case .today:
             let today = Date()
             let tomorrow = Calendar.current.date(byAdding: .day, value: 1, to: today)
-            request.predicate = NSPredicate(format: "(reminderDate BETWEEN {%@, %@}) OR (reminderTime BETWEEN {%@, %@})", today as NSDate, tomorrow! as NSDate)
+            request.predicate = NSPredicate(format: "reminderDate < %@", tomorrow! as NSDate)
         case .scheduled:
             request.predicate = NSPredicate(format: "(reminderDate != nil OR reminderTime != nil) AND isCompleted = false")
         case .completed:
