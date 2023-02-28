@@ -21,6 +21,7 @@
 		AF7E3D3429A6798A00B62301 /* MyListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7E3D3329A6798A00B62301 /* MyListsView.swift */; };
 		AF7E3D3629A67CAA00B62301 /* MyListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7E3D3529A67CAA00B62301 /* MyListCellView.swift */; };
 		AF7E3D3929A67ED000B62301 /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7E3D3829A67ED000B62301 /* String + Extensions.swift */; };
+		AF87366429ADF98900666590 /* ReminderStatsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF87366329ADF98900666590 /* ReminderStatsBuilder.swift */; };
 		AFC528B329A6561000803477 /* ListyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528B229A6561000803477 /* ListyApp.swift */; };
 		AFC528B529A6561000803477 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC528B429A6561000803477 /* HomeView.swift */; };
 		AFC528B729A6561100803477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC528B629A6561100803477 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		AF7E3D3329A6798A00B62301 /* MyListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsView.swift; sourceTree = "<group>"; };
 		AF7E3D3529A67CAA00B62301 /* MyListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListCellView.swift; sourceTree = "<group>"; };
 		AF7E3D3829A67ED000B62301 /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
+		AF87366329ADF98900666590 /* ReminderStatsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsBuilder.swift; sourceTree = "<group>"; };
 		AFC528AF29A6561000803477 /* Listy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Listy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC528B229A6561000803477 /* ListyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListyApp.swift; sourceTree = "<group>"; };
 		AFC528B429A6561000803477 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			children = (
 				AF446E1629A77973009D3180 /* editConfigs */,
 				AFC528E329A661B000803477 /* MyList+CoreDataClass.swift */,
+				AF87366329ADF98900666590 /* ReminderStatsBuilder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				AF446E1829A7798B009D3180 /* ReminderEditConfig.swift in Sources */,
 				AF446E0D29A760BC009D3180 /* MyListDetailView.swift in Sources */,
 				AF446E1A29A77D70009D3180 /* CustomOperators.swift in Sources */,
+				AF87366429ADF98900666590 /* ReminderStatsBuilder.swift in Sources */,
 				AF446E1129A76F9A009D3180 /* ReminderCellView.swift in Sources */,
 				AFC528DE29A6565200803477 /* CoreDataProvider.swift in Sources */,
 				AF7E3D3229A674EC00B62301 /* UIColorTransformer.swift in Sources */,

@@ -11,6 +11,12 @@ import UIKit
 
 @objc(MyList)
 public class MyList: NSManagedObject {
+  
+    var remindersArray: [Reminder] {
+        return reminders?.allObjects.compactMap {
+            ($0 as? Reminder)
+        } ?? []
+    }
     
 }
 
