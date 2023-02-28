@@ -14,7 +14,6 @@ struct ColorPickerView: View {
     
     var body: some View {
         HStack {
-            
             ForEach(colors, id: \.self) { color in
                 ZStack {
                     Circle().fill()
@@ -27,7 +26,6 @@ struct ColorPickerView: View {
                     selectedColor = color
                 }
             }
-            
         }.padding()
             .frame(maxWidth: .infinity, maxHeight: 100)
             .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))

@@ -34,12 +34,10 @@ struct AddNewListView: View {
             }
             .padding(30)
             .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
-            
             ColorPickerView(selectedColor: $selectedColor)
             Spacer()
             
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
-        
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("New List")
@@ -52,10 +50,8 @@ struct AddNewListView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Done") {
-                        
                         onSave(name, UIColor(selectedColor))
                         dismiss()
-                        
                     }.disabled(!isFormValid)
                 }
             }

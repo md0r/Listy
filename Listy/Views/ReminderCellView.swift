@@ -8,11 +8,9 @@
 import SwiftUI
 
 enum ReminderCellEvents {
-    
     case onInfo
     case onCheckedChange(Reminder, Bool)
     case onSelect(Reminder)
-    
 }
 
 struct ReminderCellView: View {
@@ -35,7 +33,6 @@ struct ReminderCellView: View {
     
     var body: some View {
         HStack {
-            
             Image(systemName: checked ? "circle.inset.filled": "circle")
                 .font(.title2)
                 .opacity(0.4)
@@ -48,7 +45,6 @@ struct ReminderCellView: View {
                     }
                     
                 }
-            
             VStack(alignment: .leading) {
                 Text(reminder.title ?? "")
                 if let notes = reminder.notes, !notes.isEmpty {
@@ -56,7 +52,6 @@ struct ReminderCellView: View {
                         .opacity(0.4)
                         .font(.caption)
                 }
-                
                 HStack {
                     if let reminderDate = reminder.reminderDate {
                         Text(formatDate(reminderDate))
@@ -69,7 +64,6 @@ struct ReminderCellView: View {
                     .font(.caption)
                     .opacity(0.4)
             }
-            
             Spacer()
             Image(systemName: "info.circle.fill")
                 .onTapGesture {
@@ -77,10 +71,14 @@ struct ReminderCellView: View {
                 }
                 .opacity(isSelected ? 1.0 : 0.0)
             
-        }.contentShape(Rectangle())
-            .onTapGesture {
-                onEvent(.onSelect(reminder))
-            }
+        }
+        .onAppear {
+            checked = reminder.isCompleted
+        }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            onEvent(.onSelect(reminder))
+        }
         
     }
 }

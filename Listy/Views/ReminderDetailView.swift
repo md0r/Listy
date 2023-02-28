@@ -25,27 +25,21 @@ struct ReminderDetailView: View {
                         TextField("Title", text: $editConfig.title)
                         TextField("Notes", text: $editConfig.notes ?? "")
                     }
-                    
                     Section {
                         Toggle(isOn: $editConfig.hasDate) {
                             Image(systemName: "calendar")
                                 .foregroundColor(.red)
                         }
-                        
                         if editConfig.hasDate {
-                            
                             DatePicker("Select Date", selection: $editConfig.reminderDate ?? Date(), displayedComponents: .date)
                         }
-                        
                         Toggle(isOn: $editConfig.hasTime) {
                             Image(systemName: "clock")
                                 .foregroundColor(.blue)
                         }
-                        
                         if editConfig.hasTime {
                             DatePicker("Select Date", selection: $editConfig.reminderTime ?? Date(), displayedComponents: .hourAndMinute)
                         }
-                        
                         Section {
                             NavigationLink {
                                 SelectListView(selectedList: $reminder.list)
@@ -56,9 +50,7 @@ struct ReminderDetailView: View {
                                     Text(reminder.list!.name)
                                 }
                             }
-                            
                         }
-                        
                     }.onChange(of: editConfig.hasDate) { hasDate in
                         if hasDate {
                             editConfig.reminderDate = Date()
@@ -77,7 +69,6 @@ struct ReminderDetailView: View {
                 ToolbarItem(placement: .principal) {
                     Text("Details")
                 }
-                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Done") {
                         do {
@@ -88,7 +79,6 @@ struct ReminderDetailView: View {
                         dismiss()
                     }.disabled(!isFormValid)
                 }
-                
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
                         dismiss()

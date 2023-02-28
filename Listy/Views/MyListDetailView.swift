@@ -25,9 +25,7 @@ struct MyListDetailView: View {
     
     var body: some View {
         VStack {
-            
             ReminderListView(reminders: reminderResults)
-            
             HStack {
                 Image(systemName: "plus.circle.fill")
                 Button("New Reminder") {
@@ -36,13 +34,11 @@ struct MyListDetailView: View {
             }.foregroundColor(.blue)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
-            
         }.alert("New Reminder", isPresented: $openAddReminder) {
             TextField("", text: $title)
             Button("Cancel", role: .cancel) { }
             Button("Done") {
                 if isFormValid {
-                    
                     do {
                         try RemindersService.saveReminderToMyList(myList: myList, reminderTitle: title)
                     } catch {

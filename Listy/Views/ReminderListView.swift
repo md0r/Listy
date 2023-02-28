@@ -44,14 +44,12 @@ struct ReminderListView: View {
                 ForEach(reminders) { reminder in
                     ReminderCellView(reminder: reminder, isSelected: isReminderSelcted(reminder), onEvent: { event in
                         switch event {
-                            
                         case .onSelect(let reminder):
                             selectedReminder = reminder
                         case .onInfo:
                             showReminderDetail = true
                         case .onCheckedChange(let reminder, let isCompleted):
                             reminderCheckedChanged(reminder: reminder, isCompleted: isCompleted)
-                            
                         }
                     })
                 }.onDelete(perform: deleteReminder)
